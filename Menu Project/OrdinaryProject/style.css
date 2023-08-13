@@ -1,0 +1,113 @@
+* {
+    font-family: 'Pacifico', cursive;
+    font-family: 'Satisfy', cursive;
+    padding:0;
+    margin:0;
+}
+body{
+    box-sizing: border-box;
+}
+.center{
+    width:100%;
+    height:auto;
+    display:block;
+}
+.heading{
+    margin-top: 3%;
+    text-align: center;
+    font-size: x-large;
+}
+.underline{
+    border-radius: 30%;
+    border:3px solid indigo;
+    width:15%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+.menuButtons{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.menuButtons button{
+    padding:10px;
+    font-size:25px;
+    font-weight: 600;
+    margin:20px;
+    border-radius:5px;
+    border:2px solid indigo;
+    background-color: transparent;
+    transition: 0.5s all;
+}
+.menuButtons button:hover{
+    background-color: indigo;
+    color: white;
+    border-color: white;
+    transform: translateY(-5px);
+}
+.item{
+    width:500px;
+    height:auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    box-shadow:
+    inset 0 -3em 3em rgba(0, 0, 0, 0.1),
+    0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+    padding:10px;
+    border-radius: 30px;
+    border:2px solid indigo;
+    margin-left: auto;
+    margin-right: auto;
+    transition: 0.25s all;
+}
+.image{
+    margin-right: 30px;
+}
+.image img{
+    width:217px;
+    height:188px;
+    border-radius: 30px;
+    border:4px solid indigo;
+}
+.desc{
+    display:block;
+}
+.itemName{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.name{
+    display: inline-block;
+    font-size:15px;
+}
+.itemLists{
+    width:auto;
+    display:grid;
+    grid-template-columns: repeat(auto-fit,minmax(500px,.5fr));
+    gap:10px;
+    align-items: center;
+}
+.item:hover{
+    cursor: pointer;
+    transform: translateY(-5px);
+    background-color: indigo;
+    color: white;
+    .image img{
+        border-color: white;
+    }
+}
+
+
+@media (max-width:750px)
+{
+    .itemLists{
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}

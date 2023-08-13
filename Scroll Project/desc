@@ -1,0 +1,16 @@
+// using getBoundingClientRec().height -> This will return the height of any element dynamically
+
+
+// !important -> This is the flag which is used in css which tells the javascript that
+//               this style is important when javascript trues to override it
+
+
+
+// pageYOffset -> This will return the pixels the object has scrolled vertically
+
+
+
+// for dynamic date or year we use :-
+// new Date().getFullYear()
+
+element.offsetTop()

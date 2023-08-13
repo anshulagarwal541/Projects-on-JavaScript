@@ -1,0 +1,110 @@
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    box-sizing: border-box;
+    padding:10px;
+    background-color: indigo;
+}
+.toggleButton{
+    position:absolute;
+    top:0;
+    right:0;
+    margin-top:10px;
+    margin-right:10px;
+}
+.logo img{
+    width:60px;
+    height:60px;
+}
+.sideBar{
+    padding:5px;
+    background-color: white;
+    width:400px;
+    display:flex;
+    flex-direction: column;
+    justify-content: start;
+    height:100dvh;
+    transform: 0.5s all;
+    transform: translate(-200%);
+}
+.asideHeader{
+    margin-bottom: 20px;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+.closeButton button{
+    font-size:60px;
+    border: none;
+    background-color: transparent;
+}
+.links{
+    font-size: 35px;
+    list-style: none;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.links li{
+    margin-bottom:20px;
+    transition: 0.25s all;
+}
+.links a{
+    color:black;
+    text-decoration: none;
+}
+.socialmediaLinks{
+    bottom:0;
+    position: absolute;
+    display:flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: space-around;
+    width:400px;
+}
+.socialmediaLinks a{
+    color:black;
+    font-size: 35px;
+}
+.toggleButton{
+    font-size: 30px;
+    padding:3px;
+    border: none;
+    background-color: transparent;
+    color:white;
+}
+
+.links li:hover{
+    background-color: pink;
+    transform: translateY(-7px);
+}
+.closeButton button:hover{
+    cursor: pointer;
+}
+.toggleButton:hover{
+    cursor:pointer;
+}
+.showSideBar{
+    transition: 0.5s all;
+    transform: translate(0);
+}
+
+@media (max-width:750px)
+{
+    *{
+        padding:0;
+        margin:0;
+    }
+    body{
+        padding:5px;
+    }
+    .sideBar{
+        width:100%;
+    }
+    .socialmediaLinks{
+        width:100%;
+    }
+}

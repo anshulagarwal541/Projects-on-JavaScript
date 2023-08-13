@@ -1,0 +1,160 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Pacifico', cursive;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    box-sizing: border-box;
+}
+
+nav {
+    background-image: url("https://cdn.pixabay.com/photo/2016/11/22/23/44/porsche-1851246_1280.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100vh;
+}
+
+.logo img {
+    width: 80px;
+    height: 70px;
+    border-radius: 50%;
+    border: 2px solid white;
+}
+
+.linkButton {
+    background-color: transparent;
+    font-size: 30px;
+    border: none;
+    color: white;
+    overflow: hidden;
+    height: 0;
+}
+
+.head {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.logo {
+    margin-left: 10%;
+}
+
+.linksContainer {
+    width: 70%;
+}
+
+.links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    list-style: none;
+    height: 100%;
+}
+
+.links li a {
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.navContainer {
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 10px;
+}
+
+.innerHome{
+    width:500px;
+    height:auto;
+    text-align:center;
+    color: white;
+}
+
+.innerHome h1{
+    font-weight: 800;
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.innerHome p{
+    margin-bottom: 20px;
+}
+
+.innerHome button{
+    padding:10px;
+    font-size: 20px;
+    background-color: transparent;
+    border-color: white;
+}
+
+.innerHome button a{
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+}
+
+.homeContainer {
+    position: absolute;
+    top: 40%;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:750px)
+{
+    .linkButton{
+        overflow:visible;
+        height:auto;
+        width:50%;
+    }
+    .toggleButton{
+        position: relative;
+        left:80%;
+        border: none;
+        color: white;
+        background-color: transparent;
+        font-size: 35px;
+    }
+    .logo img{
+        position:absolute;
+        left:30px;
+    }
+    .navContainer{
+        display:block;
+        background-color: black;
+        
+    }
+    .linksContainer{
+        overflow: hidden;
+        height:0;
+    }
+    .logo{
+        margin:0;
+        width:50%;
+    }
+}
