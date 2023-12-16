@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main>
+        <div class="header">
+            <i class="fa-solid fa-chevron-left"></i>
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        <img src="https://1000logos.net/wp-content/uploads/2017/11/One-Direction-emblem-768x565.jpg"
+            alt="One-Direction Logo">
+        <div class="songName">
+            <div class="name">NA</div>
+            <div class="artist">By: One Direction</div>
+        </div>
+        <audio controls id="song">
+            <source src="" alt="song">
+        </audio>
+        <div class="musicPlayer">
+            <input type="range">
+        </div>
+        <div class="buttons">
+            <div class="backward">
+                <i class="fa-solid fa-backward"></i>
+            </div>
+            <div class="pause">
+                <i class="fa-solid fa-play"></i>
+            </div>
+            <div class="forward">
+                <i class="fa-solid fa-forward"></i>
+            </div>
+        </div>
+    </main>
+    <script src="https://kit.fontawesome.com/419d73435d.js" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>

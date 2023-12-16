@@ -1,0 +1,98 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    box-sizing: border-box;
+    height: 100lvh;
+    background-image: linear-gradient(to right, #870000, #190a05);
+}
+
+main {
+    width: fit-content;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.submit {
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-weight: 700;
+    width: fit-content;
+    margin-bottom: 20px;
+    margin-bottom: 20px;
+    background-color: white;
+    color: black;
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    transform: translate(-50%, -90%) scale(0.1);
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transition: transform 0.4s, top 0.4s;
+    visibility: hidden;
+}
+
+.openPopUp {
+    transform: translate(-50%, -50%) scale(1);
+    top: 50%;
+    visibility: visible;
+    background-color: white;
+    color: black;
+    padding: 20px;
+    border: 2px solid black;
+}
+
+.tickIcon {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.tickIcon i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: green;
+    color:white;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.message {
+    text-align: center;
+    width: 250px;
+    margin-bottom: 20px;
+}
+
+.message h3 {
+    margin-bottom: 20px;
+    font-size: x-large;
+}
+
+.okButton {
+    width: fit-content;
+    padding: 10px 20px;
+    width: 250px;
+    background-color: green;
+    color: white;
+    font-weight: 800;
+    font-size: larger;
+}
+
+.animateClass .card {
+    transform: translateY(-30px);
+}

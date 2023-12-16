@@ -1,0 +1,81 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    box-sizing: border-box;
+    background-image: linear-gradient(to right, #870000, #190a05);
+    color: white;
+}
+
+main {
+    position: relative;
+    height: auto;
+    width: fit-content;
+    left: 200px;
+    top: 50px;
+}
+
+.heading {
+    width: fit-content;
+    height: auto;
+    margin: 20px;
+}
+
+.heading img {
+    width: 50px;
+    height: 50px;
+}
+
+.heading span {
+    font-size: 40px;
+    font-weight: 900;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.createButton {
+    width: fit-content;
+    margin: 20px;
+}
+
+.createButton button {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px 15px;
+    background-color: bisque;
+    border-radius: 40px;
+    border: none;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.notes {
+    width: fit-content;
+    height: auto;
+    padding-bottom: 20px;
+}
+
+.note {
+    background-color: white;
+    width: 230px;
+    height: auto;
+    color: black;
+    padding: 10px;
+    margin: 20px;
+}
+
+.note p {
+    width: auto;
+    height: 80px;
+}
+
+.noteDelete {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.noteDelete i:hover {
+    cursor: pointer;
+}

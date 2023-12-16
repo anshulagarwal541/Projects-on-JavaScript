@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    box-sizing: border-box;
+    color: white;
+    background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(121, 9, 109, 1) 100%, rgba(0, 212, 255, 1) 100%);
+}
+
+main {
+    width: 1000px;
+    height: auto;
+    margin-left: 100px;
+    margin-top: 150px;
+}
+
+.palette {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.heading {
+    width: fit-content;
+    height: auto;
+    padding: 30px 10px;
+    border-bottom: 3px solid green;
+    margin-bottom: 30px;
+}
+
+.passwordInput {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-bottom: 30px;
+}
+
+.passwordInput input {
+    width: 300px;
+    padding: 10px 20px;
+    border: none;
+    padding-top: 18px;
+    font-size: 16px;
+}
+
+.passwordInput i {
+    padding: 10px 5px;
+    font-size: x-large;
+    background-color: white;
+}
+
+.greenHeading {
+    color: green;
+}
+
+.generateButton{
+    width:fit-content;
+}
+
+.generateButton button {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px 5px;
+    font-size: 18px;
+    background-color: green;
+    color: white;
+    border: none;
+}
+
+.thunderIcon {
+    margin-right: 10px;
+}

@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Nosifer&family=Outfit&family=Pacifico&family=Roboto:wght@100;300&family=Source+Code+Pro&family=Ysabeau+SC:wght@500&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Nosifer', sans-serif;
+    font-family: 'Outfit', sans-serif;
+    font-family: 'Pacifico', cursive;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Source Code Pro', monospace;
+    font-family: 'Ysabeau SC', sans-serif;
+    box-sizing: border-box;
+    color: white;
+    background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 30%, rgba(121, 9, 109, 1) 100%, rgba(0, 212, 255, 1) 100%);
+}
+
+main {
+    position: relative;
+    top: 150px;
+    left: 200px;
+    width: fit-content;
+    height: auto;
+}
+
+.heading {
+    font-size: 60px;
+    font-weight: 900;
+    margin: 40px;
+}
+
+.heading span {
+    color: coral;
+}
+
+.operation {
+    background: rgb(0, 0, 0, 0.3);
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.3) 0%, rgba(110, 32, 121, 0.3) 2%);
+    padding: 30px;
+    border-radius: 10px;
+    margin: 40px;
+}
+
+.operation input {
+    width: 300px;
+    padding: 10px 10px;
+    font-size: 15px;
+    border: none;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+.operation button {
+    padding: 10px;
+    font-size: 15px;
+    border-radius: 10px;
+    border: none;
+    background-color: coral;
+    color: white;
+    font-weight: 800;
+}
+
+.display {
+    margin: 40px;
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.display span {
+    color: coral;
+    font-size: larger;
+}

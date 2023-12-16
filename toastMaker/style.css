@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    box-sizing: border-box;
+    background-image: linear-gradient(to right, #870000, #190a05);
+}
+
+main {
+    position: relative;
+    top: 20px;
+    left: 30px;
+    width: fit-content;
+    height: auto;
+}
+
+main button {
+    padding: 10px;
+    margin: 10px;
+    font-weight: 700;
+    background-color: #141e30;
+    color: white;
+    font-size: larger;
+    border: 0;
+}
+
+.toast {
+    position: absolute;
+    bottom: 50px;
+    right: 40px;
+    width: 300px;
+    height: auto;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.notify {
+    position: relative;
+    width: 300px;
+    height: 50px;
+    background-color: #141e30;
+    margin: 10px 0;
+    box-shadow: 10px 5px 5px black;
+    font-weight: 700;
+    font-size: 20px;
+    transform: translateX(100%);
+    animation: moveleft 0.5s linear forwards;
+}
+
+@keyframes moveleft {
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.notify::after {
+    position: absolute;
+    animation: animate 5s linear forwards;
+    background: green;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    content: '';
+    height: 3px;
+}
+
+.error::after {
+    background: red;
+}
+
+.invalid::after {
+    background: orange;
+}
+
+
+@keyframes animate {
+    100% {
+        width: 0;
+    }
+}
+
+.notify i {
+    padding: 10px;
+}
+
+.success {
+    color: green;
+}
+
+.error {
+    color: red;
+}
+
+.invalid {
+    color: orange;
+}
